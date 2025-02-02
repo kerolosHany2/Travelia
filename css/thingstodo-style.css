@@ -1,0 +1,445 @@
+/* Start Variables */
+:root {
+    --fristPageBg:#354252;
+    --fristPageText:#dfdad4;
+    
+    --otherPagesBg:#dfdad4;
+    --otherPagesText:#354252;
+    
+    --text:#232A37;
+    --lightHA:#aaa6a3;
+    --darkHA:#76838f;
+    
+    --section-padding: 100px;
+    --section-margin: 100px;
+    --secondary-font: "Satisfy", cursive;
+    }
+    /* End Variables */
+    /* Start Global Rules */
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: "Libre Caslon Text", serif;
+      font-style: normal;
+      background-color: var(--otherPagesBg);
+    }
+    ul {
+      list-style: none;
+    }
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      /* padding: 20px; */
+    }
+    .Thingstodo_h2{
+      color: var(--otherPagesText);
+    }
+    .things-sections{
+      width: 100%;
+    }
+
+      .thingstodo1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 730px;
+        background-color: var(--fristPageBg);
+        margin-top: 80px;
+      }
+     .thingstodo-text{
+      margin-right: auto;
+      margin-left: auto;
+     }
+      .thingstodo-h1 {
+        font-family: var(--secondary-font);
+        color: var(--otherPagesBg);
+        font-size: 45px;
+        font-weight: 120;
+      }
+      .thingstodo-text input {
+        padding: 10px;
+        width: 80%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-overflow: ellipsis;
+      }
+      .thingstodo-video {
+        width: 30%;
+        height: 100%;
+        overflow: hidden;
+      }
+      
+      .thingstodo-video video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    
+      .search-bar  {
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        border: 1px solid #ccc;
+        border-radius: 14px;
+        padding: 5px 10px;
+        background-color: var(--otherPagesBg);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .search-input {
+        border:1px solid var(--fristPageText);
+        outline: none;
+        padding: 5px;
+        font-size: 14px;
+        border-radius:  4px;
+        background-color: var(--fristPageText);
+      }.search-input::placeholder {
+        color: var(--fristPageBg);
+      }
+      
+      .search-button {
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: var(--fristPageBg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        border-radius: 20%;
+     
+      }
+      
+    .search-button:hover{background-color: var(--fristPageBg);
+      color: var(--otherPagesBg);}
+      .search-button:active{
+        scale: 0.9;
+      }
+    .thingstodo_p1{
+      text-align: center;
+      padding-top: 7%;
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 34px;
+      padding-bottom: 7%;
+      color: var(--otherPagesText);
+      
+    }.thingstodo_features { 
+      display: flex;
+      gap: 20px; 
+      padding-top: 0;
+      margin-right: 95px;
+      margin-left: 95px;
+      margin-top: 10px;
+    }
+    
+    .thingstodo_feature-card {
+      text-align: center;
+      padding: 20px;
+      border: 2px dashed #ccc;
+      border-radius: 10px;
+      background-color: #fff;
+      flex: 1;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .thingstodo_feature-card:hover {
+      border-color: var(--otherPagesText);
+      transition: border-color 0.3s ease-in-out;
+    }
+    
+    .icon {
+      font-size: 2rem;
+      color: var(--otherPagesText);
+      margin-bottom: 10px;
+    }
+    
+    .h3ttd {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: var(--otherPagesText);
+    }
+    
+    .thingstodo_feature-card p {
+      font-size: 1rem;
+      color: var(--otherPagesText);
+      margin: 0;
+    }
+    .thingstodo_cards {
+      width: auto; 
+      margin: 60px 0 60px 60px;
+    padding: 5px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .h2ttd {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: var(--otherPagesText);
+      margin-left: 10px;
+      
+    }.thingstodo_text p{
+      margin-left: 20px;
+      max-width: 1300px;
+      margin-right: 20px;
+    }
+    .thingstodo_lasttext{ 
+      color: var(--otherPagesText);
+    
+     }
+     hr{
+      width: 85%; /* Adjust the percentage as needed */
+      margin: 20px auto; /* Centers the hr horizontally */
+      }
+    
+      .thingstodo_card {
+        position: relative; /* Needed for positioning the favorite icon */
+        flex: 0 0 300px;
+        border-radius: 10px;
+        background-color: var(--otherPagesBg);
+        overflow: hidden;
+        cursor: pointer;
+        border: 3px solid var(--otherPagesText);
+      }
+    
+      .favourite-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .favourite-icon i {
+        color: #ff4d4d; /* Red for the heart icon */
+        font-size: 18px;
+      }
+      
+      .favourite-icon:hover {
+        background-color: gray;
+       
+      }.favourite-icon:active{
+        scale: 0.9;
+      }
+      
+      .thingstodo_card img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+      }
+      
+    
+    .thingstodo_scroll{
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    
+    .thingstodo_scroll-track {
+      display: flex;
+      gap: 20px;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      width: calc(100% - 80px);
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+      scrollbar-width: none;    /* Firefox */
+    }
+    
+    .thingstodo_scroll-track::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, and Opera */
+    }
+    
+    
+    .thingstodo_card-content {
+      padding: 15px;
+      text-align: start;
+    }
+    
+    .thingstodo_card-content h3 {
+      font-size: 1rem;
+      margin-bottom: 10px;
+      color: var(--otherPagesText);
+    }
+    
+    .thingstodo_card-content p {
+      font-size: 0.9rem;
+      color: var(--otherPagesText);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .thingstodo_rating {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .thingstodo_stars {
+      display: flex;
+      gap: 5px;
+    }
+    .circle {
+        width: 10px;
+        height: 10px;
+        background-color: #00aaff;
+        border-radius: 50%;
+      }
+      
+      .thingstodo_reviews {
+        margin-left: 10px;
+        font-size: 0.8rem;
+        color: var(--otherPagesText);
+      }
+      
+      .thingstodo_price {
+        font-weight: bold;
+        font-size: 16px;
+        color:var(--otherPagesText);
+        margin-bottom: 10px;
+      }
+    .buttonttd {
+      background: var(--otherPagesText);
+      border: 1px solid #ddd;
+      color: var(--fristPageText);
+      font-size: 1.5rem;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      border-radius: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .buttonttd:hover {
+      background-color: var(--darkHA);
+    }.buttonttd:active{
+      scale: 0.9;
+    }
+
+    .thingstodo_links a{
+      text-decoration: none;
+    line-height: 40px;
+      color: var(--otherPagesText);
+    font-size: 15px;
+    
+    }.thingstodo_links :hover{
+      text-decoration: underline;
+    }
+    
+    .thingstodo_lasttext{
+      width: 100%;
+    }
+    /* Medium */
+    
+    @media (max-width: 968px) {
+      .thingstodo_features {
+        flex-direction: column;
+        align-items: center;
+      }.thingstodo_feature-card{
+        width: 400px;
+      }
+      .thingstodo_card {
+        width: 100px;
+      }
+    .thingstodo-h1{
+      font-size: 30px;
+     }
+      .thingstodo_scroll-track {
+        padding: 5px;
+      }
+      .thingstodo2,.thingstodo1{
+        height: 350px;
+      }
+      .thingstodo_p1{
+        padding: 0;
+        margin-top: 5%;
+        margin-bottom: 5%;
+      }
+    }
+    /* Start Components */
+    
+    /* End Components */
+    
+    @media (max-width: 768px) {
+     html{
+      font-size: 14px;
+     }
+    .thingstodo-text{
+      max-width: 100%;
+      text-align: center;
+      margin-top: 25%;
+      margin-bottom: 25%;
+      padding: 20px;
+    }.search-bar{
+      font-size: 9px;
+    }
+    .thingstodo_links{
+      margin: 0; 
+      display: grid;
+      grid-template-columns: 100px 40px 100px 0;
+      grid-gap: 13px;
+      padding: 20px 30px;
+
+    }
+    .thingstodo1{ padding-top: 10px;  
+      flex-direction: column;
+      height: auto;
+    background-image: url(../imgs/ttd2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    }.thingstodo_feature-card{
+      width: 250px;
+      flex: content;
+      
+    }
+    .thingstodo_scroll-track{ padding: 0px ;}
+    .thingstodo_features{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .thingstodo-video{display: none;}
+    .thingstodo_card img{
+      width: 240px;
+    }.thingstodo_cards{
+      text-align: center;
+      padding: 0px;
+    }
+    .thingstodo_card{
+     height: 400px;
+      flex: 0 0 222px;
+    }.no_p{
+      height: 360px;
+    }
+    .thingstodo_lasttext{
+    text-align: center;;
+      padding: 30px;
+    }
+    }
+    
+    .homeFirstPage .headerList li:nth-child(2) a::before {
+      left: 0;
+    }
+  

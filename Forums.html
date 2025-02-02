@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Forum</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #dfdad4; 
+            color: #333333; 
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #354252; 
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            height: 50px;
+            width: 50px;
+        }
+
+        header nav ul {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        header nav ul li {
+            margin-bottom: 10px;
+            margin-right: 5px;
+        }
+
+
+        header nav ul li a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            background-color: transparent;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            background-color: #dfdad4;
+            color: #354252;
+            border-radius: 4px;
+        }
+
+        .main-container {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .main-container h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #2f4f4f;
+        }
+
+        .main-container p {
+            font-size: 1.1rem;
+            color: #555555;
+            margin-bottom: 2rem;
+        }
+
+        .search-section {
+            margin-bottom: 2rem;
+        }
+
+        .search-section input {
+            width: 40%;
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+
+        .search-section button {
+            padding: 0.8rem 1.5rem;
+            background-color: #354252;
+            color: white;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .search-section button:hover {
+            background-color: #675959;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+
+        .categories {
+        display: flex;
+        justify-content: center; 
+        gap: 1rem; 
+        padding: 1rem; 
+    }
+
+    .category {
+        flex: 0 1 40%; 
+        max-width: 400px; 
+        text-align: center;
+        padding: 1rem; 
+        background-color: white;
+        transition: box-shadow 0.3s, background-color 0.3s;
+        border-radius: 8px;
+        margin: 0.5rem 0; 
+    }
+
+    .category:hover {
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+    .category h3 {
+        font-size: 1.5rem; 
+        margin-bottom: 1rem;
+        color: #2f4f4f;
+        transition: color 0.3s;
+    }
+
+    .category ul {
+        list-style: none;
+        padding: 0.5rem; 
+    }
+
+    .category ul li {
+        margin-bottom: 0.3rem; 
+        padding: 0.4rem; 
+        border-radius: 4px;
+        transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .category ul li:hover {
+        background-color: #dfdad4;
+        color: #354252;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .category ul li a {
+        text-decoration: none;
+        color: #555555;
+        font-size: 0.9rem; 
+    }
+
+        footer {
+            background-color: #354252;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem; 
+            margin-top: auto;
+        }
+
+        footer a {
+            color: #dfdad4;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer p {
+            margin-top: 1rem; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="imgs/logo1.png" alt="Travel Forum Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Things to Do</a></li>
+                <li><a href="#">Restaurants</a></li>
+                <li><a href="#">Flights</a></li>
+                <li><a href="#">Vacation Rentals</a></li>
+                <li><a href="#">Cruises</a></li>
+                <li><a href="#">Rental Cars</a></li>
+                <li><a href="#">Forums</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <h1>Tripadvisor Forums</h1>
+        <p>Ask travelers who’ve been there before. Share your experience with fellow travelers.</p>
+
+        <div class="search-section">
+            <input type="text" placeholder="Best way to travel by train in Japan?">
+            <button>Search Forums</button>
+        </div>
+
+        <div class="categories">
+            <div class="category">
+                <h3 style="padding: 15px;">Browse by Destination</h3>
+                <ul>
+                    <li><a href="#">United States</a></li>
+                    <li><a href="#">Europe</a></li>
+                    <li><a href="#">Canada</a></li>
+                    <li><a href="#">Asia</a></li>
+                    <li><a href="#">Central America</a></li>
+                    <li><a href="#">Africa</a></li>
+                    <li><a href="#">Caribbean</a></li>
+                    <li><a href="#">Mexico</a></li>
+                    <li><a href="#">South Pacific</a></li>
+                    <li><a href="#">South America</a></li>
+                    <li><a href="#">Middle East</a></li>
+                </ul>
+            </div>
+            <div class="category">
+                <h3 style="padding: 15px;">Browse by Theme</h3>
+                <ul>
+                    <li><a href="#">Traveling with Pets</a></li>
+                    <li><a href="#">Outdoors / Adventure Travel</a></li>
+                    <li><a href="#">Road Trips</a></li>
+                    <li><a href="#">Travel Gadgets and Gear</a></li>
+                    <li><a href="#">Honeymoons and Romance</a></li>
+                    <li><a href="#">Family Travel</a></li>
+                    <li><a href="#">Bargain Travel</a></li>
+                    <li><a href="#">Train Travel</a></li>
+                    <li><a href="#">Air Travel</a></li>
+                    <li><a href="#">Antarctic Travel</a></li>
+                    <li><a href="#">Solo Travel</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <a href="#">Home</a> | 
+            <a href="#">Hotels</a> | 
+            <a href="#">Things to Do</a> | 
+            <a href="#">Restaurants</a> | 
+            <a href="#">Flights</a> | 
+            <a href="#">Vacation Rentals</a> | 
+            <a href="#">Cruises</a> | 
+            <a href="#">Rental Cars</a>
+        </div>
+        <p>&copy; 2024 Travel Forum. All rights reserved.</p>
+    </footer>
+</body>
+</html>

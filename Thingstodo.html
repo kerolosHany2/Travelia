@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travelia</title>
+  <link rel="icon" href="imgs/logo1.png" type="image/x-icon">
+  <!-- Render All Elements Normally -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- Font Awesome Library -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Main Template CSS File -->
+  <link rel="stylesheet" href="css/header&footer.css" />
+  <link rel="stylesheet" href="css/thingstodo-style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Satisfy&display=swap"
+    rel="stylesheet">
+
+
+</head>
+
+<body>
+  <span class="up">Up</span>
+  <div class="homeFirstPage">
+
+    <div class="fixed">
+      <div class="container">
+        <header>
+          <div class="logoBox">
+            <i class="fa-solid fa-list"></i>
+            <img src="imgs/logo1.png" alt="" class="homeLogo">
+
+          </div>
+          <ul class="headerList">
+            <li><a href="home.html ">Home</a></li>
+            <li><a href="Thingstodo.html">Things TO Do</a></li>
+            <li><a href="flights.html">Flights</a></li>
+            <li><a href="Restaurants.html">Restaurants</a></li>
+            <li><a href="Vacation.html">Vacations</a></li>
+          </ul>
+          <form action="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Search...">
+          </form>
+          <div class="homeSign">
+            <div class="homeUSD">
+              <i class="fa-solid fa-globe"></i>
+              <a href="">USD</a>
+            </div>
+            <a href="">Sign in</a>
+          </div>
+        </header>
+        <ul class="ScrollList">
+          <li><a href="noon5.html">Awards</a></li>
+          <li><a href="#">Hotels</a></li>
+          <li><a href="#">Cruises</a></li>
+          <li><a href="#">Rental Cars</a></li>
+          <li><a href="">Discover</a></li>
+          <li><a href="">Trips</a></li>
+          <li><a href="">Review</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="thingsections">
+    <section class="thingstodo1">
+      <div class="thingstodo-text">
+        <h1 class="thingstodo-h1">Find Things to Do anywhere</h1>
+        <div class="thingstodo-txt">
+          <div class="search-bar"> <button class="search-button" id="search-btn" onclick="scale()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zm-5.44.591a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />
+              </svg>
+            </button>
+            <input type="search" placeholder="Search by destination, or activity" class="search-input">
+          </div>
+        </div>
+      </div>
+      <div class="thingstodo-video">
+        <video autoplay muted loop>
+          <source src="imgs/vid3.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    </section>
+
+    <div class="thingstodo_p1">
+      <p>Plan, book, go—we make it easy</p>
+    </div>
+  </div>
+  <div class="thingstodo_features">
+    <div class="thingstodo_feature-card">
+      <div class="icon"><i class="fa fa-users" aria-hidden="true"></i></div>
+      <h3 class="h3ttd">Backed by travelers</h3>
+      <p>The Lowdown on Everything, Straight from the Source</p>
+    </div>
+    <div class="thingstodo_feature-card">
+      <div class="icon"><i class="fa fa-history" aria-hidden="true"></i></div>
+      <h3 class="h3ttd">Free cancellation</h3>
+      <p>Go with the flow. Most experiences can be canceled up to 24 hours before.</p>
+    </div>
+    <div class="thingstodo_feature-card">
+      <div class="icon"><i class="fa fa-tag" aria-hidden="true"></i></div>
+      <h3 class="h3ttd">Lowest price, guaranteed</h3>
+      <p>Max Fun, Min Spend—we’ve got the best prices out there.</p>
+    </div>
+  </div>
+  <section class="thingstodo_cards container">
+    <h2 class="h2ttd">Top global destinations</h2>
+    <div class="thingstodo_scroll">
+      <button class="thingstodo_prev-btn buttonttd">&lt;</button>
+      <div class="thingstodo_scroll-track">
+        <div class="thingstodo_card no_p">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/paris1.jpg" alt="Paris">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Paris</h3>
+          </div>
+        </div>
+        <div class="thingstodo_card no_p">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/london1.jpg" alt="London">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">London</h3>
+          </div>
+        </div>
+        <div class="thingstodo_card no_p">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/NYC2.jpg" alt="NYC">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">New York City</h3>
+          </div>
+        </div>
+        <div class="thingstodo_card no_p">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/rome.jpg" alt="Rome">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Rome</h3>
+          </div>
+        </div>
+        <div class="thingstodo_card no_p">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/Dubai2.jpg" alt="Dubai">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Dubai</h3>
+          </div>
+        </div>
+        <div class="thingstodo_card no_p">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/vegas1.jpg" alt="Las Vegas">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Las Vegas</h3>
+          </div>
+        </div>
+        <div class="thingstodo_card no_p">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/barcelona2.jpg" alt="Bercelona">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Bercelona</h3>
+          </div>
+        </div>
+        <div class="thingstodo_card no_p">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/amsterdam1.jpg" alt="Amsterdam">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Amsterdam</h3>
+          </div>
+        </div>
+        <div class="thingstodo_card no_p">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/lisbon1.jpg" alt="Libson">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Libson</h3>
+          </div>
+        </div>
+        <div class="thingstodo_card no_p">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/marrakesh.jpg" alt="Marrakech">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Marrakech</h3>
+          </div>
+        </div>
+      </div>
+      <button class="thingstodo_next-btn buttonttd">&gt;</button>
+    </div>
+  </section>
+  <section class="thingstodo_cards container">
+    <h2 class="h2ttd">Top experiences worldwide</h2>
+    <div class="thingstodo_scroll">
+      <button class="thingstodo_prev-btn buttonttd">&lt;</button>
+      <div class="thingstodo_scroll-track">
+        <div class="thingstodo_card">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/christmas.jpg" alt="Dyker Heights">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Dyker Heights Brooklyn Christmas Light</h3>
+            <div class="thingstodo_rating">
+              <div class="thingstodo_stars">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              <span class="thingstodo_reviews">2,384</span>
+            </div>
+            <p class="thingstodo_price">from $99 per adult</p>
+          </div>
+        </div>
+        <div class="thingstodo_card">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/kyoto.jpg" alt="KYOTO">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Perfect KYOTO 1-Day Bus Tour</h3>
+            <div class="thingstodo_rating">
+              <div class="thingstodo_stars">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              <span class="thingstodo_reviews">3,528</span>
+            </div>
+            <p class="thingstodo_price">from $199 per adult</p>
+          </div>
+        </div>
+        <div class="thingstodo_card">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/balloon flight.jpg" alt="Balloon flight">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Balloon flight + Breakfast in a cave + Pick up in CDMX (Optional)</h3>
+            <div class="thingstodo_rating">
+              <div class="thingstodo_stars">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              <span class="thingstodo_reviews">4,178</span>
+            </div>
+            <p class="thingstodo_price">from $249 per adult</p>
+
+          </div>
+        </div>
+        <div class="thingstodo_card">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/fuji.jpg" alt="Mt fuji ">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Mt fuji and Hakone 1-Day Bus Tour Return by Bullet Train</h3>
+            <div class="thingstodo_rating">
+              <div class="thingstodo_stars">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              <span class="thingstodo_reviews">3,956</span>
+            </div>
+            <p class="thingstodo_price">from $399 per adult</p>
+          </div>
+        </div>
+        <div class="thingstodo_card">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/beunos aires.jpg" alt="Buenos Aires City">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Buenos Aires City Private Tour with Local Guide</h3>
+            <div class="thingstodo_rating">
+              <div class="thingstodo_stars">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              <span class="thingstodo_reviews">4,629</span>
+            </div>
+            <p class="thingstodo_price">from $199 per adult</p>
+          </div>
+        </div>
+        <div class="thingstodo_card">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/milford.jpg" alt="Milford">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">2-Hour Milford Sound Scenic Cruise</h3>
+            <div class="thingstodo_rating">
+              <div class="thingstodo_stars">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              <span class="thingstodo_reviews">3,379</span>
+            </div>
+            <p class="thingstodo_price">from $299 per adult</p>
+          </div>
+        </div>
+        <div class="thingstodo_card">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/amsterdam2.jpg" alt="Amsterdam">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Amsterdam Light Festival Canal Cruise</h3>
+            <div class="thingstodo_rating">
+              <div class="thingstodo_stars">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              <span class="thingstodo_reviews">2,267</span>
+            </div>
+            <p class="thingstodo_price">from $99 per adult</p>
+          </div>
+        </div>
+        <div class="thingstodo_card">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/grand canyon.jpg" alt="Grand Canyon">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Grand Canyon West, Hoover Dam Stop</h3>
+            <div class="thingstodo_rating">
+              <div class="thingstodo_stars">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              <span class="thingstodo_reviews">3,742</span>
+            </div>
+            <p class="thingstodo_price">from $399 per adult</p>
+          </div>
+        </div>
+
+        <div class="thingstodo_card">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/kyoto.jpg" alt="KYOTO">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Perfect KYOTO 1-Day Bus Tour</h3>
+            <div class="thingstodo_rating">
+              <div class="thingstodo_stars">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              <span class="thingstodo_reviews">3,528</span>
+            </div>
+            <p class="thingstodo_price">from $199 per adult</p>
+          </div>
+        </div>
+
+
+      </div>
+      <button class="thingstodo_next-btn buttonttd">&gt;</button>
+    </div>
+  </section>
+  <section class="thingstodo_cards container">
+    <h2 class="h2ttd">Top global attractions</h2>
+    <div class="thingstodo_scroll">
+      <button class="thingstodo_prev-btn buttonttd">&lt;</button>
+      <div class="thingstodo_scroll-track">
+        <div class="thingstodo_card no_p">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/colosseum.jpg" alt="Colosseum" class="card-img">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Colosseum</h3>
+            <div class="thingstodo_rating">
+              <div class="thingstodo_stars">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              <span class="thingstodo_reviews">150,469</span>
+            </div>
+          </div>
+        </div>
+        <div class="thingstodo_card no_p">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/eiffel.jpg" alt="Eiffel Tower">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Eiffel Tower</h3>
+            <div class="thingstodo_rating">
+              <div class="thingstodo_stars">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              <span class="thingstodo_reviews">142,742</span>
+            </div>
+          </div>
+        </div>
+        <div class="thingstodo_card no_p">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/basilica.jpg" alt="Basilica de la Sagrada Familia">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Basilica de la Sagrada Familia</h3>
+            <div class="thingstodo_rating">
+              <div class="thingstodo_stars">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              <span class="thingstodo_reviews">167,112</span>
+            </div>
+          </div>
+        </div>
+        <div class="thingstodo_card no_p">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/central park.jpg" alt="Central park">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Central park</h3>
+            <div class="thingstodo_rating">
+              <div class="thingstodo_stars">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              <span class="thingstodo_reviews">134,742</span>
+            </div>
+          </div>
+        </div>
+        <div class="thingstodo_card no_p">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/tower of london.jpg" alt="Tower of London">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Tower of London</h3>
+            <div class="thingstodo_rating">
+              <div class="thingstodo_stars">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              <span class="thingstodo_reviews">68,752</span>
+            </div>
+          </div>
+        </div>
+        <div class="thingstodo_card no_p">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/anne frank.jpg" alt="Anne Frank House">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Anne Frank House</h3>
+            <div class="thingstodo_rating">
+              <div class="thingstodo_stars">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              <span class="thingstodo_reviews">64,294</span>
+            </div>
+          </div>
+        </div>
+        <div class="thingstodo_card no_p">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/gardens by the bay.jpg" alt="Gardens by the Bay">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Gardens by the Bay</h3>
+            <div class="thingstodo_rating">
+              <div class="thingstodo_stars">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              <span class="thingstodo_reviews">61,778</span>
+            </div>
+          </div>
+        </div>
+        <div class="thingstodo_card no_p ">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/alcatraz2.jpg" alt="Alcatraz Island">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Alcatraz Island</h3>
+            <div class="thingstodo_rating">
+              <div class="thingstodo_stars">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              <span class="thingstodo_reviews">52,346</span>
+            </div>
+          </div>
+        </div>
+        <div class="thingstodo_card no_p">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/duomo.jpg" alt="Duomo di Milano">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Duomo di Milano</h3>
+            <div class="thingstodo_rating">
+              <div class="thingstodo_stars">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              <span class="thingstodo_reviews">42,792</span>
+            </div>
+          </div>
+        </div>
+        <div class="thingstodo_card no_p">
+          <div class="favourite-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <img src="imgs/burk khalifa.jpg" alt="Burj khalifa">
+          <div class="thingstodo_card-content">
+            <h3 class="h3ttd">Burj khalifa</h3>
+            <div class="thingstodo_rating">
+              <div class="thingstodo_stars">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              <span class="thingstodo_reviews">77,782</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="thingstodo_next-btn buttonttd">&gt;</button>
+    </div>
+  </section>
+  <hr>
+  <section class="thingstodo_lasttext container">
+    <h2 class="h2ttd">Top things to do and attractions near me</h2>
+    <p>Explore the best things to do around the world on Tripadvisor to get recommendations and read reviews from those
+      who have been there before. From family-friendly activities and adventure excursions to city tours, museums and
+      iconic attractions, discover amazing experiences near and far to start planning your next trip.</p>
+  </section>
+  <hr>
+  <section class="thingstodo_links container">
+    <a href=""> Hotels</a><br>
+    <a href="">Things to do</a><br>
+    <a href="Restaurants.html">Restaurants</a><br>
+    <a href="">Cruises</a><br>
+    <a href="">Cars</a><br>
+    <a href="">More <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+  </section>
+  <hr>
+  <footer class="footer" id="contact">
+    <h1 class="specail-heading">Contact</h1>
+    <div class="container">
+      <div class="footerContainer">
+        <div class="footerColumn">
+          <h4><i class="fa-solid fa-plus"></i>About Travelia</h4>
+          <ul>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>About Us</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Press</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Resources and Policies</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Careers</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Investor Relations</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Trust & Safety</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Contact us</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Accessibility Statement</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Bug Bounty Program</a></li>
+          </ul>
+        </div>
+
+        <div class="footerColumn">
+          <h4><i class="fa-solid fa-plus"></i>Explore</h4>
+          <ul>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Write a review</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Add a Place</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Join</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Travelers' Choice</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>GreenLeaders</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Blog</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Help Center</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Travel Articles</a></li>
+          </ul>
+        </div>
+
+        <div class="footerColumn">
+          <h4><i class="fa-solid fa-plus"></i>Do Business With Us</h4>
+          <ul>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Owners</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Business Advantage</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Sponsored Placements</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Advertise with Us</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Access our Content API</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Become an Affiliate</a></li>
+          </ul>
+          <h4 class="getTheApp"><i class="fa-solid fa-plus"></i>Get The App</h4>
+          <ul>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>iPhone App</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Android App</a></li>
+          </ul>
+        </div>
+        <div class="footerColumn">
+          <h4><i class="fa-solid fa-plus"></i>Travelia Sites</h4>
+          <ul>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Book the best restaurants with TheFork</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Book tours and attraction tickets on Viator</a>
+            </li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Read cruise reviews on Cruise Critic</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Get airline seating charts on Seat Guru</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Find vacation rentals on FlipKey</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right"></i>Search for holiday rentals on Holiday
+                Lettings</a></li>
+          </ul>
+          <div class="footerBottom">
+            <div class="footerSocial">
+              <a href="#"> <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#"> <i class="fa-solid fa-x"></i>
+              </a>
+              <a href="#"> <i class="fab fa-pinterest"></i>
+              </a>
+              <a href="#"> <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+
+            <div class="footerMeta">
+              <select>
+                <option value="USD">$ U.S. Dollars</option>
+                <option value="GBP">£ British Pounds</option>
+                <option value="EUR">€ Euros</option>
+                <option value="CAD">CA$ Canadian Dollars</option>
+                <option value="CHF">CHF Swiss Francs</option>
+                <option value="AUD">A$ Australian Dollars</option>
+                <option value="JPY">¥ Japanese Yen</option>
+                <option value="CNY">CN¥ Chinese Yuan</option>
+                <option value="INR">₹ Indian Rupees</option>
+                <option value="BRL">R$ Brazilian Real</option>
+                <option value="HKD">HK$ Hong Kong Dollars</option>
+                <option value="RUB">RUB Russian Rubles</option>
+                <option value="SEK">SEK Swedish Krona</option>
+                <option value="TRY">TRY Turkish Lira</option>
+                <option value="DKK">DKK Danish Krone</option>
+                <option value="MXN">MX$ Mexican Peso</option>
+              </select>
+              <select>
+                <option value="United States">United States</option>
+                <option value="Canada (English)">Canada (English)</option>
+                <option value="Canada (Français)">Canada (Français)</option>
+                <option value="台灣">台灣</option>
+                <option value="Hong Kong SAR">Hong Kong SAR</option>
+                <option value="香港特別行政區">香港特別行政區</option>
+                <option value="العربية">العربية</option>
+                <option value="مصر">مصر</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Brasil">Brasil</option>
+                <option value="México">México</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Chile">Chile</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Perú">Perú</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Italia">Italia</option>
+                <option value="España">España</option>
+              </select>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="copyRight">&copy; <span id="year"></span> Travelia. All Rights Reserved.</p>
+  </footer>
+  </div>
+  <script src="js/thingsToDo.js"></script>
+  <script src="js/header&footer.js"></script>
+</body>
+
+
+
+</html>

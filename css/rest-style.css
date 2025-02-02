@@ -1,0 +1,358 @@
+/* Start Variables */
+:root {
+    --fristPageBg:#354252;
+    --fristPageText:#dfdad4;
+    
+    --otherPagesBg:#dfdad4;
+    --otherPagesText:#354252;
+    
+    --text:#232A37;
+    --lightHA:#aaa6a3;
+    --darkHA:#76838f;
+    
+    --section-padding: 100px;
+    --section-margin: 100px;
+    --secondary-font: "Satisfy", cursive;
+    }
+    /* End Variables */
+    /* Start Global Rules */
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+
+  /* Hero Section */
+  .restaurants_hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 730px;
+    padding: 0px;
+    background-color: var(--fristPageBg);
+  margin-top: 10px;
+
+
+  }
+
+  .restaurants_hero-text h1 {
+    font-family: var(--secondary-font);
+ 
+    color: var(--otherPagesBg);
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: 100;
+  }
+  
+.restaurants_hero-text{
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+
+ }
+
+  .restaurants_hero-text input {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+    .search-bar2 {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    padding: 5px 10px;
+    background-color: var(--otherPagesBg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .search-input2 {
+    border:1px solid var(--fristPageText);
+    outline: none;
+    padding: 5px;
+ 
+    font-size: 14px;
+    border-radius:  4px;
+    background-color: var(--fristPageText);
+  }.search-input2::placeholder {
+    color: var(--fristPageBg);
+  }
+  
+  .search-button2 {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 20%;
+ 
+  }
+  
+.search-button2:hover{background-color: var(--fristPageBg);
+  color: var(--otherPagesBg);}
+  .search-button2:active{
+    scale: 0.9;
+  }
+
+
+  .restaurants_hero-text input {
+    padding: 10px;
+    width: 80%;
+    border-radius: 24px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 1px solid transparent;
+   
+  }
+  
+  .restaurants_hero-wallpaper1 {
+    background-image: url(../imgs/rest3.jpg); 
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+  }
+  .restaurants_hero-wallpaper2{
+    display: none;
+    background-image: url(../imgs/rest1.jpg); 
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+  }
+  /* Highlight Section */
+  .restaurants_highlight {
+    text-align: center;
+    padding: 20px;
+    
+  }
+  
+  .restaurants_highlight h2 {
+    font-size: 24px;
+  }
+  body {
+    font-family: "Libre Caslon Text", serif;    margin: 0;
+    padding: 0;
+    background-color: var(--fristPageText);
+    color:var(--otherPagesText);
+  }
+
+  
+  .containerrr {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  .containerrr h2{
+    font-size: 30px;
+  }
+  .card-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .carddd {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .carddd img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .card-info {
+    padding: 10px;
+  }
+  
+  .carddd h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  .carddd p{
+    font-size: 14px;
+  }
+  .carddd:hover {
+    transform: scale(1.05);
+  }
+  
+  .thingstodo_rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .thingstodo_stars {
+    display: flex;
+    gap: 5px;
+  }
+  .circle {
+      width: 10px;
+      height: 10px;
+      background-color: #00aaff;
+      border-radius: 50%;
+    }
+    
+    .thingstodo_reviews {
+      margin-left: 10px;
+      font-size: 0.8rem;
+      color: var(--otherPagesText);
+    }
+  .hidden {
+    display: none;
+    opacity: 0;
+  }
+  
+  .see-more-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--fristPageBg);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .see-more-btn:hover {
+    background-color: var(--lightHA);
+    color: var(--fristPageBg);
+  }
+  .rest-h1 {
+    text-align: center;
+}
+
+.container2 {
+  margin-left: 9px;
+  margin-right: 9px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.accordion-header{
+   font-size: 23px;
+  color: var(--otherPagesBg);
+  background-color: var(--fristPageBg);
+}
+.column {
+    width: 30%;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.rest-h2{
+    margin-top: 0;
+    display: none;
+}
+
+.ulrest {
+    
+    list-style: none;
+    padding: 0;
+}
+.accordion-content{
+  margin-top: 30px;
+}
+.accordion-heade li {
+    margin-bottom: 7px;
+    cursor: pointer;
+
+  }.accordion-heade li:hover{
+  text-decoration: underline;
+
+}
+
+
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+
+    .restaurants_hero {
+      flex-direction: column;
+      height: 300px;
+      padding-top: 30px;  
+      background-image: url(../imgs/rest34.jpg);
+      background-size: cover;
+      
+      background-repeat: no-repeat;
+    }
+  
+
+    .restaurants_hero-wallpaper1{display: none;}
+  
+    .restaurants_hero-text {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .card-grid{
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+    .carddd img{
+      height: 200px;
+    }
+    .container2 {
+      flex-direction: column;
+  }
+
+  .column {
+      width: 100%;
+  }
+
+  .accordion-item {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+  }
+
+  .accordion-header {
+     
+      padding: 10px;
+      cursor: pointer;
+      display: flex;
+      width: 200px;
+      justify-content: space-between;
+      align-items: center;
+      transition: width 1s;
+  }
+
+  .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+  }
+  .accordion-header:hover {
+    width: 100%  }
+  .accordion-header:active {
+    scale: 1.02;
+  }
+
+  }
+  .homeFirstPage .headerList li:nth-child(4) a::before {
+    left: 0;
+  }
